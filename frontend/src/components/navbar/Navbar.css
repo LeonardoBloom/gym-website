@@ -1,0 +1,212 @@
+/* play yellow = #ffbb5b */
+/* play red = #db1717 */
+
+:root {
+    --primary: #ffbb5b; /* navbutton buttons hover */
+    --secondary: #db1717;
+    --secondary2: #ffc617; 
+    --secondary3: #ffc617; 
+    --tertiary: ;
+}
+
+html, body {
+    /* scrollbar-color: grey white !important; */
+    /* overflow-x: hidden; */
+    margin: 0;
+    padding: 0;
+}
+
+
+/* CUSTOM TAILWINDCSS SCROLLBAR */
+
+/* custom-scrollbar.css */
+body::-webkit-scrollbar {
+    width: 5px !important; /* Width of the scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: transparent !important; /* Transparent track */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: #dc2626 !important; /* Thumb color */
+    border-radius: 8px !important; /* Rounded edges */
+  }
+  
+  body::-webkit-scrollbar-thumb:hover {
+    background: #b91c1c !important; /* Thumb color on hover */
+  }
+  
+  /* For Firefox */
+  .custom-scrollbar {
+    scrollbar-width: thin !important; /* Thin scrollbar */
+    scrollbar-color: #db1717 transparent !important; /* Thumb color and track color */
+  }
+  
+
+
+
+.top-bar {
+    display: flex;
+    align-items: center;
+}
+
+.sticky-height {
+    overflow: visible;
+    /* position: fixed; */
+}
+.navbar {
+    position: sticky;
+    overflow: visible;
+    top: 0px;
+    left: 0px;
+    height: 91px;
+    z-index: 10000;
+    background-color: transparent;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s ease-in;
+}
+.nav-scroll {
+    background-color: black;
+    height: 65px;
+    transition: height 0.2s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+.scrolled {
+    transform: scale(0.7);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.navbar-container {
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+    align-items: center;
+    position: sticky;
+    justify-content: space-between;
+}
+
+.contact {
+    width: 100%;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 13px;
+    height: 25px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.contact p {
+    display: flex;
+    flex-direction: row;
+    /* gap: 1rem; */
+}
+
+.phone, .address, .hours {
+    gap: 10px;
+}
+
+.top-bar-icon {
+    margin-top: 6px;
+    color: rgb(255, 53, 53);
+    width: 10px;
+}
+.phone-number {
+    color: white;   
+}
+
+
+.logo {
+    /* margin-right: auto; */
+    width: 75px;
+    height: 75px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.features {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    /* margin-left: auto; */
+
+}
+    .membership-nav {
+        background-color: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        color: white !important;
+        
+        position: relative; /* Required to position the ::after pseudo-element */
+        padding-top: 0px; /* Adjust to create space for the line above */
+
+    }
+    .membership-nav:hover {
+        color: var(--secondary) !important;
+        transition: color 0.2s ease !important;
+    }
+    .membership-nav::after {
+        width: 0 !important;
+        height: 2px !important;
+        background-color: black !important;
+        transition: width 0.2s ease !important;
+
+        content: ""; /* No content, just the line */
+        position: absolute; /* Allows for precise positioning */
+        top: 0; /* Position the line at the top of the button */
+        left: 0;
+        width: 100%; /* Line spans the full width of the button */
+        height: 2px; /* Height of the line */
+        background-color: var(--secondary) !important; /* Line color, adjust as needed */
+        transform: scaleX(0); /* Start with the line hidden */
+        transition: transform 0.3s ease; /* Animate the line appearing */
+    }
+        .membership-nav:hover::after {
+            width: 100% !important;
+
+            transform: scaleX(1); /* Expand the line on hover */
+        }
+
+.dropdown ul {
+    background-color: #fff;
+}
+
+.dropdown ul li a:hover {
+    background-color: var(--secondary) !important;
+
+}
+
+.features li a {
+    color: inherit; /* Set the initial color, inheriting from the parent */
+    transition: color 0.1s ease; /* Smooth transition for color change */
+}
+
+.features li a:hover {
+    color: white; /* Change the text color to white on hover */
+}
+
+.login-button {
+    font-weight: bold;
+    color: #fff;
+    background-color: var(--secondary);
+    border: 2px solid var(--secondary) ;
+    border-radius: 20px;
+    padding: 5px 15px;
+
+    /* margin-left: 15px; */
+    /* margin-right: 15px; */
+
+    transition: all 0.2s ease-in-out;
+}
+
+.login-button:hover {
+    background-color: #aa1212;
+    border: 2px solid #aa1212 ;
+    /* color: #000; */
+}
