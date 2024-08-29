@@ -20,14 +20,14 @@ function App() {
       {/* <div className='p-4 h-screen flex items-center justify-center'> */}
         <Routes>
           {/* NAVBAR */}
-          <Route path='/' element={<Home />} />
-          <Route path='/horario-das-aulas' element={<Schedules />} />
-          <Route path='/personal-trainer' element={<PersonalTrainer />} />
-          <Route path='/instalacoes' element={<Facilities />} />
-          <Route path='/sobre-nos' element={<About />} />
+          <Route path='/gym-website/' element={<Home />} />
+          <Route path='/gym-website/horario-das-aulas' element={<Schedules />} />
+          <Route path='/gym-website/personal-trainer' element={<PersonalTrainer />} />
+          <Route path='/gym-website/instalacoes' element={<Facilities />} />
+          <Route path='/gym-website/sobre-nos' element={<About />} />
 
           {/* USER */}
-          <Route path='/login' element={<Login />} />
+          <Route path='/gym-website/login' element={<Login />} />
           {/* <Route path='/register' element={<SignUp />} /> */}
 
         </Routes>
