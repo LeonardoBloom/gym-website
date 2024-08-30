@@ -2,6 +2,7 @@ import React from 'react'
 
 import './Home.css';
 import ScrollHandler from '../../utils/ScrollHandler';
+import { Link } from 'react-router-dom';
 
 
 // ASSETS FILES
@@ -11,8 +12,13 @@ import PricesBkg from '../../assets/images/home/second-circle-scatter.svg'
 import DuoPose from '../../assets/images/home/standing-and-kneeling-muscular-couple-athlete-dedicated-physique.png'
 import Arrows from '../../assets/images/home/white-arrow.png'
 import HeroLines from '../../assets/images/hero-lines.png'
-import IntroImg from '../../assets/images/home/personal-training-adelaide-gym-guy-bodybuilding.png'
+import PeaksTop from '../../assets/images/home/stacked-peaks-top.svg'
+import PeaksBot from '../../assets/images/home/stacked-peaks-bottom.svg'
+import Gym1 from '../../assets/images/home/gym-1.png'
+import Gym2 from '../../assets/images/home/gym-2.png'
+// import IntroImg from '../../assets/images/home/personal-training-adelaide-gym-guy-bodybuilding.png'
 import Footer from '../../components/footer/Footer';
+import CardSlider from '../../components/slider/CardSlider';
 
 const Home = () => {
   return (
@@ -25,19 +31,19 @@ const Home = () => {
                 </video>
                 <div className='hero-text'>
                     <h3>Bem-Vindo ao</h3>
-                    <h1><span style={{ color :'#ffc617' }}>Ginásio</span> <span style={{ color: '#db1717'}}>Play</span></h1>
+                    <h1><span style={{ color :'#ffc617' }}>Ginásio</span> <span style={{ color: '#db1717'}}></span></h1>
                 </div>
                 <div className='hero-lines-right'>
-                    <img src={HeroLines} ></img>
+                    <img src={HeroLines} alt='hero-lines' ></img>
                 </div>
                 <div className='hero-lines-left'>
-                    <img src={HeroLines} ></img>
+                    <img src={HeroLines} alt='hero-lines'></img>
                 </div>
             </div>
 
             <section className='content'>
                 <div className='back-images'>
-                    <img id='one' src={Arrows}></img>
+                    <img id='one' src={Arrows} alt='arrows'></img>
                 </div>
                 <div className='first'>
                     <div className='first-caption-text'>
@@ -45,8 +51,8 @@ const Home = () => {
                     </div>
                     <div className='first-bkg'>
                         <div className='images'>
-                            <img id='fore' src={DuoPose}></img>
-                            <img id='back' src={FirstBanner} ></img>
+                            <img id='fore' src={DuoPose} alt='intro-img'></img>
+                            <img id='back' src={FirstBanner} alt='into-bkg'></img>
                         </div>
                         <div className='first-text'>
                             <h1>Lorem Ipsum</h1>
@@ -58,8 +64,18 @@ const Home = () => {
 
             </section>
             <div className='activities'></div>
+
+            <img src={PeaksTop} className='peaks' alt='peaks'></img>
+
+            <div className='swiper-section'>
+                <CardSlider style={{ zIndex: 20}} />
+
+            </div>
+
+            <img src={PeaksBot} className='peaks' alt='peaks'></img>
+
             <div className='prices'>
-                    <img className='bkg-prices' src={PricesBkg}></img>
+                    <img className='bkg-prices' src={PricesBkg} alt='prices-bkg'></img>
                     <h1 id="caption">Tabela de Preços</h1>
                     <div className='prices-container'>
                         <div className='pack side-pack'>
@@ -132,6 +148,35 @@ const Home = () => {
                         </div>
 
                     </div>
+            </div>
+
+            <div className='facilities' >
+                <h1 id='facilities-caption'>Instalações</h1>
+                
+                    <div className='facility-card facility-maputo'>
+                        <div className='facility-img'>
+                            <img src={Gym1} alt='facility image'></img>
+                        </div>
+                        <div className='facility-info'>
+                            <h1>Maputo</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non enim nulla. In fringilla diam sed blandit pretium. Cras vel aliquam massa. Integer at convallis risus, et posuere sem. Ut scelerisque, augue vel convallis pellentesque, nibh mi semper justo, vel rhoncus nibh dui quis magna. Sed massa ipsum, dignissim a velit aliquam, suscipit elementum erat. Morbi sed porta augue. Aliquam egestas tempus nisi, in pellentesque ipsum bibendum vitae.
+                                </p>
+                            <Link to=''><button>Saber Mais +</button></Link>
+                        </div>
+                    </div>
+                
+                    <div className='facility-card facility-matola'>
+                        <div className='facility-img'>
+                            <img src={Gym2} alt='facility image'></img>
+                        </div>
+                        <div className='facility-info'>
+                            <h1>Matola</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non enim nulla. In fringilla diam sed blandit pretium. Cras vel aliquam massa. Integer at convallis risus, et posuere sem. Ut scelerisque, augue vel convallis pellentesque, nibh mi semper justo, vel rhoncus nibh dui quis magna. Sed massa ipsum, dignissim a velit aliquam, suscipit elementum erat. Morbi sed porta augue. Aliquam egestas tempus nisi, in pellentesque ipsum bibendum vitae.
+                                </p>
+                            <Link to='' className='gym-more'><button>Saber Mais +</button></Link>
+                        </div>
+                    </div>
+                
             </div>
             
         </div>

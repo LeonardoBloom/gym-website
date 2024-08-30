@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import './Footer.css';
 
 import { FaSquareFacebook, FaInstagram } from "react-icons/fa6";
-import FooterLogo from '../../assets/images/footer/footer-logo.png'
+import FooterLogo from '../../assets/images/footer/logo.png'
 
 const Footer = () => {
 
@@ -17,7 +17,7 @@ const Footer = () => {
             <div className='footer-container'>
                 <div className='footer-top'>
                     <div className='footer-logo'>
-                        <img src={FooterLogo} alt='footer-logo' width={90} height={90}></img>
+                        <img src={FooterLogo} alt='footer-logo' width={70} height={70}></img>
                     </div>
                     <div className='footer-socials'>
                         <span>
@@ -73,7 +73,7 @@ const Footer = () => {
                 <div className='separator'></div>
 
                 <div className='copyright'>
-                    <p>Copyright © 2024 - Ginásio PLAY, Lda</p>
+                    <p>Copyright © 2024 - Ginásio, Lda</p>
                 </div>
             </div>
         </div>

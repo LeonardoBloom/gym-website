@@ -49,6 +49,14 @@ const Navbar = ({isScrolled}) => {
                     <Link ><img src={logo} alt='gym logo'></img></Link>
                 </div>
                 <div className='features'>
+                    {/* INICIO */}
+                    <div className={`dropdown dropdown-hover`}>
+                        <Link to=''><div tabIndex={0} role="button" className="membership-nav btn m-1" style={{}} >Início</div></Link>
+                        {/* <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                            <li><Link>Inscreva-se</a></li>
+                            <li><a>Gerir a sua Conta</a></li>
+                        </ul> */}
+                    </div>
                     {/* Membership */}
                     <div className="dropdown dropdown-hover">
                         <Link to=''><div tabIndex={0} role="button" className="membership-nav btn m-1">Inscrição</div></Link>

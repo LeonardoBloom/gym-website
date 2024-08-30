@@ -28,7 +28,9 @@ const ScrollHandler = () => {
 
     return (
         <>
-            <NavBar isScrolled={isScrolled} />
+            <NavBar 
+                isScrolled={isScrolled}
+             />
         </>
     )
 }

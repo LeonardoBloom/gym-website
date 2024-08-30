@@ -1,20 +1,48 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/navbar/Navbar';
+// import Navbar from './components/navbar/Navbar';
 import Home from './pages/home/Home';
 import About from './pages/about/About';
-import { Route, Routes, Navigate } from 'react-router-dom';
-import { useAuthContext } from './context/AuthContext';
+import { Route, Routes} from 'react-router-dom';
+// import { useAuthContext } from './context/AuthContext';
+import Lenis from '@studio-freight/lenis';
 
 
 import Login from './pages/login/Login';
-import SignUp from './pages/signup/SignUp';
+// import SignUp from './pages/signup/SignUp';
 import Schedules from './pages/schedules/Schedules';
 import PersonalTrainer from './pages/personal-training/PersonalTrainer';
 import Facilities from './pages/facilities/Facilities';
+import { useEffect } from 'react';
 
 function App() {
-  const {authUser} = useAuthContext();
+  // const {authUser} = useAuthContext();
+
+  useEffect(() => {
+    const lenis = new Lenis ({
+      duration: 1.2,  // control the smoothness of the scroll
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // easing function
+      direction: 'vertical', // 'vertical' or 'horizontal'
+      gestureDirection: 'vertical', // direction of gesture scrolling
+      smooth: true, // enable or disable smooth scrolling
+      mouseMultiplier: 1, // scroll speed
+      smoothTouch: false, // smooth touch scrolling
+      touchMultiplier: 2, // touch scrolling speed
+      infinite: false, // infinite scrolling
+    });
+
+    function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+
+    //cleanup
+    return () => {
+      lenis.destroy();
+    };
+  }, []);
+
   return (
     <>
       {/* <div className='p-4 h-screen flex items-center justify-center'> */}

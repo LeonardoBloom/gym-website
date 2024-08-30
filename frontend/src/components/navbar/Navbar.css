@@ -137,6 +137,16 @@ body::-webkit-scrollbar {
     /* margin-left: auto; */
 
 }
+
+.activated a div, .activated a div::after{
+    color:#db1717 !important;
+}
+
+.activated a div::after{
+    width: 100% !important;
+
+            transform: scaleX(1);
+}
     .membership-nav {
         background-color: transparent !important;
         border: none !important;
