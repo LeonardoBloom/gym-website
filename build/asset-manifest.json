@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/gym-website/static/css/main.0920be38.css",
+    "main.js": "/gym-website/static/js/main.812bd51f.js",
+    "static/js/453.8ab44547.chunk.js": "/gym-website/static/js/453.8ab44547.chunk.js",
+    "static/media/hero-pushups.webm": "/gym-website/static/media/hero-pushups.6f376aca8d26252f4f35.webm",
+    "static/media/standing-and-kneeling-muscular-couple-athlete-dedicated-physique.png": "/gym-website/static/media/standing-and-kneeling-muscular-couple-athlete-dedicated-physique.6b32185716da91c0416a.png",
+    "static/media/gym-2.png": "/gym-website/static/media/gym-2.dfb309089fb09ecff589.png",
+    "static/media/gym-1.png": "/gym-website/static/media/gym-1.258a8d38ec332bc40a37.png",
+    "static/media/logo.png": "/gym-website/static/media/logo.1d90a314168ece35a8c0.png",
+    "static/media/Nomenclatur-Light.ttf": "/gym-website/static/media/Nomenclatur-Light.194bfcc0a1ef60c507b4.ttf",
+    "static/media/white-arrow.png": "/gym-website/static/media/white-arrow.969838934a6954ef1be4.png",
+    "static/media/hero-lines.png": "/gym-website/static/media/hero-lines.6c56b83a379816d5d2e5.png",
+    "index.html": "/gym-website/index.html",
+    "static/media/stacked-peaks-bottom.svg": "/gym-website/static/media/stacked-peaks-bottom.7442190b49ee546d7281dc4329ec4d6d.svg",
+    "static/media/second-circle-scatter.svg": "/gym-website/static/media/second-circle-scatter.3a9c2cf9c1980efe4ac41423baf41adb.svg",
+    "static/media/first-circle-scatter.svg": "/gym-website/static/media/first-circle-scatter.d06518e9358461b276f41260bf180e1f.svg",
+    "static/media/stacked-peaks-top.svg": "/gym-website/static/media/stacked-peaks-top.b29f1d943cfc0dc0adb5a43785a0a603.svg",
+    "main.0920be38.css.map": "/gym-website/static/css/main.0920be38.css.map",
+    "main.812bd51f.js.map": "/gym-website/static/js/main.812bd51f.js.map",
+    "453.8ab44547.chunk.js.map": "/gym-website/static/js/453.8ab44547.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0920be38.css",
+    "static/js/main.812bd51f.js"
+  ]
+}
