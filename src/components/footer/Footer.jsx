@@ -24,8 +24,8 @@ const Footer = () => {
                             Siga-nos Aqui:
                         </span>
                         <div className='footer-socials-box'>
-                            <Link to='https://www.facebook.com/ginasioplay/'><FaSquareFacebook size={35} /></Link>
-                            <Link to='https://www.instagram.com/ginasioplay/'><FaInstagram size={36}/></Link>
+                            <Link to='#'><FaSquareFacebook size={35} /></Link>
+                            <Link to='#'><FaInstagram size={36}/></Link>
                         </div>
                     </div>
 
